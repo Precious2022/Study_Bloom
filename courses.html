@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyBloom - Courses</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="courses-page">
+        <h1>Our Courses</h1>
+        
+        <div class="category-buttons">
+            <button id="programming-courses-btn">Programming Courses</button>
+            <button id="skills-courses-btn">Skills Courses</button>
+        </div>
+
+        <div class="filter-controls">
+            <input type="text" id="search-input" placeholder="Search courses...">
+            <select id="sort-option">
+                <option value="name">Sort by Name</option>
+                <option value="availability">Sort by Availability</option>
+            </select>
+            <label>
+                <input type="checkbox" id="filter-available" checked>
+                Show Available Only
+            </label>
+        </div>
+
+        <div id="courses-list" class="courses-container">
+            <!-- Course items will be dynamically inserted here -->
+        </div>
+        
+        <div id="enrollmentForm" class="enrollment-form" style="display: none;">
+            <h2>Enroll in Course</h2>
+            <form id="enrollForm">
+                <label for="userEmail">Email:</label>
+                <input type="email" id="userEmail" name="userEmail" required>
+                <label for="document">Upload Matric Certificate:</label>
+                <input type="file" id="document" name="document" accept=".pdf,.jpg,.png" required>
+                <input type="hidden" id="courseName">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 StudyBloom. All rights reserved.</p>
+    </footer>
+    <script src="js/courses.js"></script>
+</body>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - StudyBloom</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+               
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="quiz-section" id="html-css-js-quiz">
+            <h2>HTML/CSS/JavaScript Quiz</h2>
+            <div id="html-css-js-questions">
+                <!-- Quiz questions will be dynamically added here -->
+            </div>
+            <button onclick="submitQuiz('html-css-js')">Submit Quiz</button>
+            <div id="html-css-js-result"></div>
+        </section>
+        
+        <section class="quiz-section" id="python-quiz">
+            <h2>Python Quiz</h2>
+            <div id="python-questions">
+                <!-- Quiz questions will be dynamically added here -->
+            </div>
+            <button onclick="submitQuiz('python')">Submit Quiz</button>
+            <div id="python-result"></div>
+        </section>
+        
+        <section class="quiz-section" id="java-quiz">
+            <h2>Java Quiz</h2>
+            <div id="java-questions">
+                <!-- Quiz questions will be dynamically added here -->
+            </div>
+            <button onclick="submitQuiz('java')">Submit Quiz</button>
+            <div id="java-result"></div>
+        </section>
+        
+        <section class="quiz-section" id="data-science-quiz">
+            <h2>Data Science Quiz</h2>
+            <div id="data-science-questions">
+                <!-- Quiz questions will be dynamically added here -->
+            </div>
+            <button onclick="submitQuiz('data-science')">Submit Quiz</button>
+            <div id="data-science-result"></div>
+        </section>
+    </main>
+</body>
+</html>
+

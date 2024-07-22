@@ -1,0 +1,196 @@
+/* CSS Variables */
+:root {
+    --font-family: 'Arial', sans-serif;
+    --bg-color-light: #6b7987b8;
+    --bg-color-dark: #343a40;
+    --primary-color: #0056b3;
+    --secondary-color: #004085;
+    --text-light: #ffffff;
+    --text-dark: #212529;
+    --border-color: #ced4da;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+/* General styles */
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color-light);
+    color: var(--bg-color-dark);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header, footer {
+    background-color: var(--text-light);
+    padding: 15px 0;
+    box-shadow: 0 4px 8px var(--shadow-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 600;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--primary-color);
+}
+
+/* Page styles */
+.home-page, .courses-page {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: var(--text-light);
+    transition: background-image 0.3s;
+}
+
+.home-page {
+    background-image: url('../img/home2.jpg');
+}
+
+.hero-section, .quiz-section, .auth-section, .community-page > div {
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 8px var(--shadow-color);
+    border-radius: 8px;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 800px;
+    animation: fadeIn 1s;
+}
+
+.hero-content, .quiz-section form, .auth-section form, .create-join-group-section form {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.hero-content h1, .auth-section h2 {
+    font-size: 3.5rem;
+    color: var(--text-dark);
+    margin-bottom: 20px;
+}
+
+.hero-content p, .course-info p, .auth-section .link {
+    font-size: 1.25rem;
+    color: #6c757d;
+}
+
+.cta, .enroll-button, .quiz-section form button, .auth-section form button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+}
+
+.cta:hover, .enroll-button:hover, .quiz-section form button:hover, .auth-section form button:hover {
+    background-color: var(--secondary-color);
+}
+
+.courses-container {
+    overflow: hidden;
+}
+
+.course {
+    background-color: var(--text-light);
+    box-shadow: 0 4px 8px var(--shadow-color);
+    width: calc(50% - 20px);
+    margin: 10px;
+    text-align: center;
+    border-radius: 8px;
+    float: left;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.course:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.course img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid var(--bg-color-light);
+}
+
+.course-info {
+    padding: 20px;
+}
+
+.course-info h2, .create-join-group-section h2 {
+    font-size: 1.75rem;
+    margin-bottom: 15px;
+}
+
+.course-info p {
+    font-size: 1.1rem;
+    color: #6c757d;
+}
+
+.course-selection button, .create-join-group-section form button {
+    margin: 0 10px;
+    transition: background-color 0.3s;
+}
+
+.course-selection button:hover, .create-join-group-section form button:hover {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+}
+
+.resources-section ul, .latest-news-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.resources-section ul li a, .latest-news-section ul li a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.resources-section ul li a:hover, .latest-news-section ul li a:hover {
+    color: var(--secondary-color);
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideInLeft {
+    from { transform: translateX(-100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideInRight {
+    from { transform: translateX(100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+
+
+
+
+
+
